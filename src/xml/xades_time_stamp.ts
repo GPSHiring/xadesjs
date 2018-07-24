@@ -1,5 +1,5 @@
 import { XmlAttribute, XmlChildElement, XmlElement } from "xml-core";
-import { CanonicalizationMethod } from "xmldsigjs";
+import { CanonicalizationMethod } from "xmldsigjs-keyinfo";
 
 import { EncapsulatedTimeStampCollection, Include, XMLTimeStampCollection } from "./generic_time_stamp";
 import { XmlXades } from "./xml";

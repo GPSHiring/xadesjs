@@ -1,6 +1,6 @@
 import { XmlChildElement, XmlContent, XmlElement } from "xml-core";
 import { IConverter, XmlNumberConverter } from "xml-core";
-import { Transforms } from "xmldsigjs";
+import { Transforms } from "xmldsigjs-keyinfo";
 
 import { AnyCollection } from "./any";
 import { ObjectIdentifier } from "./object_identifier";

@@ -1,5 +1,5 @@
 import { XmlChildElement, XmlElement } from "xml-core";
-import { DataObject as XmlDSigDataObject, XmlSignature } from "xmldsigjs";
+import { DataObject as XmlDSigDataObject, XmlSignature } from "xmldsigjs-keyinfo";
 
 import { QualifyingProperties } from "./qualifying_properties";
 

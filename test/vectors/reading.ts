@@ -1,7 +1,7 @@
 import * as assert from "assert";
 import { XmlObject } from "xml-core";
 let WebCrypto = require("node-webcrypto-ossl");
-import { Application } from "xmldsigjs";
+import { Application } from "xmldsigjs-keyinfo";
 import * as XAdES from "../../";
 import { SignedXml, xml } from "../../";
 let { QualifyingProperties, SignatureTimeStamp, CertificateValues, RevocationValues, ArchiveTimeStamp } = xml;

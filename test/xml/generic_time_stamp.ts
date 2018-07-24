@@ -1,5 +1,5 @@
 import * as assert from "assert";
-import { XmlDsigC14NTransform } from "xmldsigjs";
+import { XmlDsigC14NTransform } from "xmldsigjs-keyinfo";
 import * as XAdES from "../../";
 
 context("xml", () => {

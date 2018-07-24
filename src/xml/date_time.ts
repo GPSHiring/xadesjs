@@ -1,9 +1,9 @@
-import { XmlContent, XmlElement } from "xml-core";
+import {XmlContent, XmlElement} from "xml-core";
 
 import {dateFormat} from "../dateformat";
 
-import { XmlXades } from "./xml";
-import { XadesObject } from "./xml_base";
+import {XmlXades} from "./xml";
+import {XadesObject} from "./xml_base";
 
 @XmlElement({
     localName: "XadesDateTime",
@@ -17,6 +17,8 @@ export class XadesDateTime extends XadesObject {
         required: true,
     })
     public Value: Date;
+
+    public Date?: string;
 
     /**
      * Format of the datetime value
@@ -33,10 +35,14 @@ export class XadesDateTime extends XadesObject {
     }
 
     protected OnGetXml(e: Element) {
-        if (this.Format) {
-            e.textContent = dateFormat(this.Value, this.Format);
-        } else {
-            e.textContent = this.Value.toISOString();
+        if (!this.Date) {
+            if (this.Format) {
+                e.textContent = dateFormat(this.Value, this.Format);
+            } else {
+                e.textContent = this.Value.toISOString();
+            }
+        }else{
+            e.textContent = this.Date;
         }
     }
 

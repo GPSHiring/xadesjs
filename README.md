@@ -1,4 +1,4 @@
-# XAdESjs
+# XAdESjs - KeyInfo
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/PeculiarVentures/xadesjs/master/LICENSE.md)
 [![CircleCI](https://circleci.com/gh/PeculiarVentures/xadesjs.svg?style=svg)](https://circleci.com/gh/PeculiarVentures/xadesjs)
@@ -7,6 +7,11 @@
 
 [![NPM](https://nodei.co/npm-dl/xadesjs.png?months=2&height=2)](https://nodei.co/npm/xadesjs/)
 
+
+# This version adds a fix to the SignedXml class that throws an exception when you try to add a Reference with a specific URL before call the sign method. This was specifically with the KeyInfo Reference
+
+
+[For information please refer the original XMLDSIG js](https://github.com/PeculiarVentures/xadesjs)).
 
 [XAdES](https://en.wikipedia.org/wiki/XAdES) is short for "XML Advanced Electronic Signatures", it is a superset of XMLDSIG. This library aims to provide an implementation of XAdES in Typescript/Javascript that is built on [XMLDSIGjs](https://github.com/PeculiarVentures/xmldsigjs).
 

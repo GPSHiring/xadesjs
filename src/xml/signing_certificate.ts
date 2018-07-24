@@ -1,6 +1,6 @@
 import { XmlAttribute, XmlChildElement, XmlElement } from "xml-core";
 import { XmlBase64Converter } from "xml-core";
-import { DigestMethod, X509IssuerSerial, XmlSignature } from "xmldsigjs";
+import { DigestMethod, X509IssuerSerial, XmlSignature } from "xmldsigjs-keyinfo";
 
 import { XmlXades } from "./xml";
 import { XadesCollection, XadesObject } from "./xml_base";

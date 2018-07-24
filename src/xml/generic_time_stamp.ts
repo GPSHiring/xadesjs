@@ -1,6 +1,6 @@
 import { XmlAttribute, XmlChildElement, XmlElement } from "xml-core";
 import { XmlBase64Converter } from "xml-core";
-import { CanonicalizationMethod, XmlSignature } from "xmldsigjs";
+import { CanonicalizationMethod, XmlSignature } from "xmldsigjs-keyinfo";
 
 import { Any } from "./any";
 import { EncapsulatedPKIData } from "./encapsulated_pki_data";

@@ -1,5 +1,5 @@
 import { XmlChildElement, XmlElement } from "xml-core";
-import { Signature } from "xmldsigjs";
+import { Signature } from "xmldsigjs-keyinfo";
 
 import { UnsignedSignatureProperty } from "./unsigned_signature_properties";
 import { XmlXades } from "./xml";

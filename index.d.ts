@@ -1,5 +1,5 @@
 import * as XmlCore from "xml-core";
-import * as XmlDSigJs from "xmldsigjs";
+import * as XmlDSigJs from "xmldsigjs-keyinfo";
 
 declare namespace XAdES {
 
