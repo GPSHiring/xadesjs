@@ -103,6 +103,7 @@ export class ObjectIdentifier extends XadesObject {
         localName: XmlXades.ElementNames.Description,
         namespaceURI: XmlXades.NamespaceURI,
         prefix: XmlXades.DefaultPrefix,
+        required: true,
         defaultValue: "",
     })
     public Description: string;

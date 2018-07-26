@@ -1,6 +1,6 @@
 {
   "name": "xadesjs-keyinfo",
-  "version": "2.0.12",
+  "version": "2.0.23",
   "description": "A pure Typescript/Javascript implementation of XAdES based on XMLDSIGjs.",
   "main": "dist/index.js",
   "types": "index.d.ts",
@@ -48,7 +48,7 @@
   "homepage": "https://github.com/PeculiarVentures/xadesjs#readme",
   "dependencies": {
     "tslib": "^1.9.0",
-    "xmldsigjs-keyinfo": "^2.0.26"
+    "xmldsigjs-keyinfo": "^2.0.34"
   },
   "devDependencies": {
     "@types/dateformat": "^1.0.1",

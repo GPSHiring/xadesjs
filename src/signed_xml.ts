@@ -124,6 +124,7 @@ export class SignedXml extends XmlDSigJs.SignedXml {
 
         this.XmlSignature.Id = `id-${id}`;
         const dataObject = new XAdES.DataObject();
+        dataObject.Id = "XadesObjectId-"+Date.now();
         dataObject.QualifyingProperties.Target = `#${this.XmlSignature.Id}`;
         dataObject.QualifyingProperties.SignedProperties.Id = `xades-${this.XmlSignature.Id}`;
 
@@ -186,9 +187,8 @@ export class SignedXml extends XmlDSigJs.SignedXml {
                 policyId.SigPolicyId.Identifier = new XAdES.Identifier();
                 policyId.SigPolicyId.Identifier.Qualifier = options.identifier.qualifier;
                 policyId.SigPolicyId.Identifier.Value = options.identifier.value;
-                if (options.identifier.description) {
-                    policyId.SigPolicyId.Description = options.identifier.description;
-                }
+                policyId.SigPolicyId.Description = options.identifier.description || "";
+
                 if (options.identifier.references) {
                     policyId.SigPolicyId.DocumentationReferences = new XAdES.DocumentationReferences();
                     options.identifier.references.forEach((referenceValue) => {

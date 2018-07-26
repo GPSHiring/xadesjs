@@ -24,11 +24,11 @@ import { XadesObject } from "./xml_base";
 })
 export class QualifyingProperties extends XadesObject {
 
-    @XmlAttribute({ localName: XmlXades.AttributeNames.Target, required: true })
-    public Target: string;
-
     @XmlAttribute({ localName: XmlXades.AttributeNames.Id, defaultValue: "" })
     public Id: string;
+
+    @XmlAttribute({ localName: XmlXades.AttributeNames.Target, required: true })
+    public Target: string;
 
     @XmlChildElement({ parser: SignedProperties })
     public SignedProperties: SignedProperties;

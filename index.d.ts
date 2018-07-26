@@ -36,7 +36,7 @@ declare namespace XAdES {
     export interface OptionsPolicyIdentifier {
         qualifier: xml.IdentifierQualifier;
         value: string;
-        description?: string;
+        description: string;
         references?: string[];
     }
     export interface OptionsPolicyId {
@@ -95,6 +95,7 @@ declare namespace XAdES.xml {
     export class XadesDateTime extends XadesObject {
         public Value: Date;
         public Format?: string;
+        public Date?: string;
     }
 
     //#endregion
